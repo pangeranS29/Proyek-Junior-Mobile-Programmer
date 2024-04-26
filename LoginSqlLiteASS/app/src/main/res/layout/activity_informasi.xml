@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warnakulit"
+    tools:context=".Informasi">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lavender"
+        app:title="Informasi" />
+
+
+
+    <TextView
+        android:id="@+id/deskripsi_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Aplikasi Android Proyek Akhir Junior Mobile Programmer "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/deskripsi_prodi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deskripsi_app"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="LAB KOMPUTER INSTITUTE TEKNOLOGI DEL"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/info_prodi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deskripsi_prodi"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="LAGUBOTI TOBA"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+</RelativeLayout>

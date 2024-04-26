@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/warnakulit"
+    tools:context=".home">
+
+    <!-- AppBar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lavender"
+        app:title="Dashboard" />
+
+    <!-- Gambar di atas -->
+    <ImageView
+        android:id="@+id/imageViewTop"
+        android:layout_width="360dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/baseline_person_24" />
+
+    <!-- Tiga tombol di tengah -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lihatdata"
+            android:textSize="20sp"
+            android:text="Lihat Data"
+            android:drawableLeft="@drawable/ic_lihat_data" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Data"
+            android:backgroundTint="@color/lavender"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_input_data"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Informasi"
+            android:backgroundTint="@color/informasi"
+            android:drawableLeft="@drawable/ic_informasi"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Log Out"
+            android:backgroundTint="@color/merah"
+            android:drawableLeft="@drawable/baseline_logout_24"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</LinearLayout>
